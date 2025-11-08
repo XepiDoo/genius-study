@@ -1,11 +1,17 @@
 :root {
-    --color-prim-dark: #465929;
-    --color-prim-light: #FAF4EA;
-    --color-brand: #819b57; 
+    --color-primary-dark: #31261a;
+    --color-primary-light: #faf4ea;
+    --color-secondary-dark: #a28268;
+    --color-brand-dark: #465929;
+    --color-brand-normal: #819b57;
+    --color-brand-light: #cfcfbc
 }
 /*Global Styles*/
  body {
     color: var(--color-prim-dark);
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
  }
 
 ul {
@@ -14,12 +20,13 @@ ul {
 
 /*Button Styles*/
 .button {
-    color: var(--color-prim-light)
-    background-color: var(--color-brand)
-    border: 2px solid var(--color-brand)
-    border-radius: 8px;
-    cursor: pointer;
-}
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-normal);
+        border: 2px solid var(--color-brand-normal);
+        border-radius: 8px;
+        cursor: pointer
+    }
+    
 
 .button:hover {
     color: #465929;
@@ -33,14 +40,20 @@ ul {
 /*Link Styles*/
 .link {
     color: #fafafa
+
 }
 
 .link:hover {
     color: var(--color-brand)
 }
 
+/* Hero */
 .hero-title {
     color: #FAF4EA ;
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+
 }
 
 .hero-title .accent {
@@ -52,10 +65,29 @@ ul {
     background-color: var(--color-brand);
 }
 
+/* Sections */
 .section-title {
     color: #31261A
 }
 
 .section-title .accent {
     color: var(--color-brand);
+}
+/* Traditions */
+
+.traditions-text {
+white-space: nowrap; 
+}
+
+
+.traditions-text .brand{
+    color: var(--color-brand);
+
+ 
+}
+
+.traditions-text .uppercase {
+color: var(--color-brand);
+text-transform: uppercase;
+
 }
