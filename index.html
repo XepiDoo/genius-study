@@ -5,57 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасне кохання</title>
-    <!-- Fonts -->
-     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    } -->
-  </style>
+     </style>
     <link rel="stylesheet" href="./CSS/styles.css">
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+     <div class="container"> 
+      <div class="header-container"> 
+      <nav class="header-nav">
         <a href="./index.html">
-          <img src="./images/logo.svg" alt="Логотип сучасності" />
+          <img class="chefs-image" src="./images/logo.svg" alt="Логотип сучасності" />
         </a>
-        <ul>
+        <ul class="header-menu">
           <li><a class="link" href="#traditions">Наші традиції</a></li>
           <li><a class="link" href="#chefs" >Шеф-кухарі</a></li>
           <li><a class="link" href="#formats" >Формати</a></li>
           <li><a class="link" href="#contacts" >Контакти</a></li>
         </ul>
       </nav>
-      <button class="button" type="button" disabled>Замовити дзвінок</button>
+      <button class="button" type="button" disabled>Замовити дзвінок</button></div></div>
     </header>
     <main>
-      <section class="main-section">
-        <h1 class="hero-title"><span class="accent">Сучасне</span> кохання</h1>
-      </section>
-      <section class="traditions">
+      <section class="hero-section">
+      <div class="container">  <h1 class="hero-title"><span class="accent">Сучасне</span> кохання</h1>
+      </div></section>
+      <section class="advantages-section">
+        <div class="container">
+        <h2 class="visually-hidden">Наші переваги</h2>
         <ul class="advantages-list">
           <li class="advantages-item">Великий попит на ринку</li>
           <li class="advantages-item">Доступні за бюджетом формати</li>
           <li class="advantages-item">Досвідчена управлінська команда</li>
-        </ul>
-        <h2 class="section-title">Новий формат традицій</h2>
+        </ul></div></section>
+     
+        <section class="traditions-section section" id="traditions">
+           <div class="container">
+            <div class="traditions-container">
+  <div class="traditions-content">          <h2 class= "traditions-title section-title" >Новий формат традицій</h2>
         <p class="traditions-text">
           <span  class="uppercase">shop bakery </span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
         </p>
-          <p class="traditions-text">
+          <p class="traditions-text limited">
           Ми працюємо як найвідоміші мережі—
           <span class="brand"> 5 хвилин і замовлення готове. </span>
           А ще у наших пекарень стильний дизайн та висока якість обслуговування! 
-        </p>
-          <img src="./images/baker-man.jpg" alt="Усміхнений пекар за роботою" />
-      </section>
-      <section id="chefs">
-        <h2 class="section-title">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
+        </p></div>
+
+          <img class="traditions-image" src="./images/baker-man.jpg" alt="Усміхнений пекар за роботою" />
+        </div></div></section>
+
+      
+
+      <section class="section" id="chefs-section">
+       <div class="container"> <h2 class="chefs-title section-title centered">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
         <ul>
           <li>
             <article>
+              <img class="chefs-image" src="./images/nastya.jpg" alt="smiling woman">
               <h3 class="chef-title">Настя</h3>
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
@@ -64,6 +71,7 @@
           </li>
           <li>
             <article>
+              <img class="chefs-image" src="./images/vlad.jpg" alt="man cooks">
               <h3 class="chef-title">Влада</h3>
               <p>Привіт, я Влада!</p>
               <p>
@@ -73,13 +81,15 @@
               <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
             </article>
           </li>
-        </ul>
+        </ul></div>
       </section>
-      <section id="formats">
-        <h2 class="section-title">Формати</h2>
-        <ul>
-          <li>
-            <article>
+
+    
+        <section class="section" id="formats-section">   <div class="container">
+        <h2 class="formats-title section-title centered">Формати</h2>
+        <ul class="formats-list">
+          <li class="formats-item">
+            <article class="format-card">
               <h3 class="format-title"  lang="en">Walrus</h3>
               <div class="format-text">
               <p>Площа: до 120 м2 </p>
@@ -88,40 +98,41 @@
 <p>Посадкові місця: є</p></div>
             </article>
           </li> 
-          <li> 
-            <article><h3 class="format-title"  lang="en">Horseshoe</h3>
+          <li class="formats-item"> 
+            <article class="format-card"><h3 class="format-title"  lang="en">Horseshoe</h3>
                   <div class="format-text">
             <p>Площа: до 25 м2</p>
 <p>Меню: найпопулярніші позиції меню</p>
 <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
 <p>Посадкові місця: відсутні</p></div></article>
           </li> 
-          <li> 
-            <article><h3 class="format-title"  lang="en">Handlebar</h3>
+          <li class="formats-item"> 
+            <article class="format-card"><h3 class="format-title"  lang="en">Handlebar</h3>
                 <div class="format-text">
             <p>Площа: до 15 м2 </p>
 <p>Меню: найпопулярніші позиції меню </p>
 <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
 <p>Посадкові місця: відсутні</p></div></article>
           </li> 
-        </ul>
+        </ul>   </div>
       </section>
-      <section id="contacts">
-        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
+   
+   <section class="section" id="contacts-section">   <div class="container"> 
+        <h2 class="contacts-title section-title">Приєднуйся до мережі пекарень</h2>
         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
          <iframe
   id="inlineFrameExample"
   title="Inline Frame Example"
   width="603"
   height="595"
-  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24895.93225008108!2d-9.17183788601075!3d38.74095656059792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2spt!4v1762472969942!5m2!1suk!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
-</iframe>
+  class="chefs-image" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24895.93225008108!2d-9.17183788601075!3d38.74095656059792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2spt!4v1762472969942!5m2!1suk!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
+</iframe></div>
       </section>
     </main>
   </body>
-  <footer>
-    <a href="#">
-      <img src="./images/logo.svg" alt="Логотип сучасності" />
+  <footer class="footer">
+   <div class="container"><a href="#">
+      <img class="chefs-image" src="./images/logo.svg" alt="Логотип сучасності" />
     </a>
     <nav>
       <ul>
@@ -153,6 +164,6 @@
       </ul>
       <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
       <p class="address-copyright">&copy; 2022 Дані захищені</p>
-    </address>
+    </address> </div> 
   </footer>
 </html>
