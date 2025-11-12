@@ -369,6 +369,35 @@ box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--co
     flex-basis: calc((100% - 40px) / 3) ;
 }
 
+
+/* Carousel */
+
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--color-primary-dark);
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: var(--color-primary-dark);
+    cursor: pointer;
+}
+
+/* .carousel-arrow {
+    fill: var(--color-primary-dark);
+} */
+
+.carousel-button:hover {
+
+    background-color: var(--color-primary-dark);
+fill: var(--color-primary-light);
+}
+
+
+
 /* Contacts */
 .contacts-title {
     margin-bottom: 16px;
@@ -397,4 +426,14 @@ background-position: center;
 
 .address-copyright {
     font-size: 14px;
+}
+
+.address-icon {
+    fill: var(--color-primary-light);
+
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-normal);
+
 }
