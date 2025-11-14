@@ -61,28 +61,34 @@
       
 
       <section class="section" id="chefs-section">
-       <div class="container"> <h2 class="chefs-title section-title centered">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
-        <ul>
-          <li>
-            <article>
+       <div class="container"> 
+        <h2 class="chefs-title section-title centered">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
+        <ul class="chefs-list">
+          <li class="chefs-item">
+            <article class="chefs-card">
               <img class="chefs-image" src="./images/nastya.jpg" alt="smiling woman">
+            <div>
               <h3 class="chef-title">Настя</h3>
+              <div class="chefs-text">
               <p>Привіт, я Настя!</p>
-              <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
-              <p>Я випічу для вас найсмачніщі вироби!</p>
+              <p>Вже 10 років, я втілюю <br>у життя цікаві та смачні ідеї.</p>
+              <p>Я випічу для вас <br>найсмачніщі вироби!</p>
+            </div> </div>
             </article>
           </li>
-          <li>
-            <article>
+          <li class="chefs-item">
+            <article class="chefs-card">
               <img class="chefs-image" src="./images/vlad.jpg" alt="man cooks">
+              <div>
               <h3 class="chef-title">Влада</h3>
-              <p>Привіт, я Влада!</p>
-              <p>
-                Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов,
+              <p class="chefs-text">Привіт, я Влада!</p>
+              <p class="chefs-text">Мій кодитерський стаж вже 18 років. <br>
+                SHOP BEKERY - це наша любов,
                 з якою ми ділимось кожен раз з Вами через нашу випічку!
               </p>
-              <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
-            </article>
+              <p class="chefs-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+            </div>
+          </article>
           </li>
         </ul></div>
       </section>
@@ -91,7 +97,8 @@
         <section class="section" id="formats-section">   
           <div class="container">
         <h2 class="formats-title section-title centered">Формати</h2>
-        <button class="carousel-button" type="button">
+     <div class="formats-container">
+         <button class="carousel-button" type="button">
 <svg width="16" height="16" >
 <use href="./images/icons.svg#icon-Arrow-1"></use> 
   </svg>
@@ -129,36 +136,51 @@
 <use href="./images/icons.svg#icon-Arrow-1"></use> 
   </svg>
         </button>
+     </div>
       </div>
       </section>
    
-   <section class="section" id="contacts-section">   <div class="container"> 
+   <section class="section contacts-section" id="contacts-section">   
+    <div class="container"> 
+      <div class="contacts-container">
+<div class="contacts-form">
         <h2 class="contacts-title section-title">Приєднуйся до мережі пекарень</h2>
         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-         <iframe
+<!-- Тут буде форма -->
+
+        </div>
+         <iframe class="contacts-map"
   id="inlineFrameExample"
   title="Inline Frame Example"
   width="603"
   height="595"
-  class="chefs-image" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24895.93225008108!2d-9.17183788601075!3d38.74095656059792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2spt!4v1762472969942!5m2!1suk!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
-</iframe></div>
+   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24895.93225008108!2d-9.17183788601075!3d38.74095656059792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2spt!4v1762472969942!5m2!1suk!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</iframe>
+</div>
+ </div>
       </section>
-    </main>
+    </main> 
   </body>
+ 
   <footer class="footer">
-   <div class="container"><a href="#">
+   <div class="container">
+    <div class="footer-container">
+     <nav class="footer-nav">
+<div class="footer-logo">
+  <a href="#">
       <img class="logo-image" src="./images/logo.svg" alt="Логотип сучасності" />
     </a>
-    <nav>
-      <ul>
+  </div>
+   
+      <ul class="footer-menu">
         <li><a class="link" href="#" target="_blank">Наші традиції</a></li>
         <li><a class="link" href="#" target="_blank">Шеф-кухарі</a></li>
         <li><a class="link" href="#" target="_blank">Формати</a></li>
         <li><a class="link" href="#" target="_blank">Контакти</a></li>
       </ul>
     </nav>
-    <address>
-      <ul>
+    <address class="footer-address">
+      <ul class="address-list">
         <li><a class="address-link" href="tel:+38(096)0000007">+ 38 (096) 000 00 07</a></li>
         <li><a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
         <li>
@@ -181,8 +203,10 @@
           </a>
         </li>
       </ul>
+      <div class="address-info">
       <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
       <p class="address-copyright">&copy; 2022 Дані захищені</p>
-    </address> </div> 
+      </div>
+    </address> </div> </div>
   </footer>
 </html>
