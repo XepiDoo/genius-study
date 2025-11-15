@@ -26,7 +26,7 @@
           <li><a class="link" href="#contacts" >Контакти</a></li>
         </ul>
       </nav>
-      <button class="button" type="button" disabled>Замовити дзвінок</button></div></div>
+      <button class="button modal-btn-open" type="button" >Замовити дзвінок</button></div></div>
     </header>
     <main>
       <section class="hero-section">
@@ -58,11 +58,10 @@
           <img class="traditions-image" src="./images/baker-man.jpg" alt="Усміхнений пекар за роботою" />
         </div></div></section>
 
-      
-
-      <section class="section" id="chefs-section">
+          <section class="section" id="chefs-section">
        <div class="container"> 
-        <h2 class="chefs-title section-title centered">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
+        <h2 class="chefs-title section-title centered">Наші найкращі <br/>
+          <span class="accent"> шеф-кухарі</span></h2>
         <ul class="chefs-list">
           <li class="chefs-item">
             <article class="chefs-card">
@@ -98,9 +97,9 @@
           <div class="container">
         <h2 class="formats-title section-title centered">Формати</h2>
      <div class="formats-container">
-         <button class="carousel-button" type="button">
+         <button class="carousel-button next" type="button">
 <svg width="16" height="16" >
-<use href="./images/icons.svg#icon-Arrow-1"></use> 
+<use href="./images/icons.svg#icon-Arrow-2"></use> 
   </svg>
         </button>
         <ul class="formats-list"> 
@@ -133,7 +132,7 @@
         </ul>  
               <button class="carousel-button" type="button">
 <svg width="16" height="16" >
-<use href="./images/icons.svg#icon-Arrow-1"></use> 
+<use href="./images/icons.svg#icon-Arrow"></use> 
   </svg>
         </button>
      </div>
@@ -160,9 +159,7 @@
  </div>
       </section>
     </main> 
-  </body>
- 
-  <footer class="footer">
+ <footer class="footer">
    <div class="container">
     <div class="footer-container">
      <nav class="footer-nav">
@@ -209,4 +206,15 @@
       </div>
     </address> </div> </div>
   </footer>
+ 
+    <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal-btn-close"  type="button"> Close </button>
+      </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+</body>
+ 
+
 </html>
