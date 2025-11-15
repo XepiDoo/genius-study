@@ -79,9 +79,13 @@
  }
 
 /* Header */
+
 .header {
-    background-color: grey;
-    width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding-top: 32px;
 }
 
 .header-container {
@@ -149,14 +153,15 @@ ul {
         border: 2px solid var(--color-brand-normal);
         border-radius: 8px;
         cursor: pointer;
-        font-weight: 600 ;
+        font-weight: 600;
+        transition: background-color 0.3s, color .3s;
     }
-    
+   
 
 .button:hover {
-    color: #465929;
-    background-color: transparent;
-    border: 2px solid #465929;
+    background-color: var(--color-primary-light);
+       border: 2px solid var(--color-brand-dark);
+        color: var(--color-brand-dark);
 }
 
 .button:active {
@@ -166,8 +171,8 @@ ul {
 
 .link {
     color: var(--color-primary-light);
-    line-height: 27px;
     text-decoration: none;
+    transition: color 0.3s;
   
 
 }
@@ -181,7 +186,8 @@ ul {
 /* Hero */
 .hero-section {
     padding: 272px 0;
-    background-image: url(../images/bg.png);
+    background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%),
+    url(../images/bg.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -304,9 +310,65 @@ font-weight: 300;
 /* Chefs Section */
 
 .chefs-title {
+position: relative;
 margin: 0 auto 80px;
-max-width: 520px;
-font-size: 64px;
+
+}
+
+.chefs-title::before,
+.chefs-title::after {
+    position: absolute;
+    bottom: 24px;
+    display: block;
+
+    width: 352px;
+    border: 2px solid var(--color-brand-normal);
+    content: '';
+}
+
+
+.chefs-title::before {
+left: 0;
+
+}
+
+.chefs-title::after {
+ right: 0;
+
+}
+
+
+.chefs-title .accent {
+    display: block;
+    color: var(--color-brand-dark);
+}
+
+.chefs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+
+
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chefs-card {
+    display: flex;
+    gap: 30px;
+
+}
+
+.chefs-image {
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-shadow-dark);
+
 }
 
 .chefs-text p {
@@ -317,53 +379,6 @@ font-size: 64px;
     margin-bottom: 0;
 }
 
-
-.chefs-title::after {
-    display: block;
-    width: 352px;
-    content: '';
-    border: 2px solid var(--color-brand-light);
-
-}
-
-.chefs-title::before {
-    display: block;
-    width: 352px;
-    content: '';
-border: 2px solid var(--color-primary-light);
-}
-
-.chef-title {
-    margin-bottom: 16px;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.chefs-list {
-    display: flex;
-  
-       gap: 40px 30px;
-
-}
-
-.chefs-image {
-
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        border-bottom-left-radius: 200px;
-box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-shadow-dark);
-
-    }
-
-.chefs-item {
-    flex-basis: calc(100%-30px) /2;
-}
-
-.chefs-card {
-    display: flex;
-    gap: 30px;
-}
 
 /* Formats */
 
@@ -400,10 +415,16 @@ box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--co
     rgba(49, 38, 26, 0) 55.21%,
     rgba(49, 38, 26, 0.71) 72.92%,
     #31261a 100% );
-    
-    border: 1px solid grey;
-        border-radius: 16px;
+             border-radius: 16px;
+        transition: transform 0.3s;
+
     }
+
+.format-card:hover {
+    transform: scale(1.05);
+}
+
+
 
 .formats-item {
     flex-basis: calc((100% - 40px) / 3) ;
@@ -438,6 +459,11 @@ fill: var(--color-primary-light);
 }
 
 
+.carousel-button.next {
+    transform: rotate(180deg);
+
+}
+
 
 /* Contacts */
 
@@ -463,6 +489,7 @@ fill: var(--color-primary-light);
 /* Footer */
 
 .footer {
+    position: relative;
     background-image: url(../images/black-bg.png);
     background-color: var(--color-primary-dark);
 background-repeat: no-repeat;
@@ -475,6 +502,34 @@ padding: 32px 0;
     display: flex;
     gap: 20px;
 }
+
+
+footer::before,
+footer::after {
+position: absolute;
+    bottom: 0;
+        background-repeat: no-repeat;
+            content: '';
+}
+
+
+
+footer::before {
+  left: 0;
+    width: 180px;
+    height: 120px;
+    background-image: url(../images/bread1.png);
+
+
+}
+
+footer::after {
+                    right: 0;
+            width: 380px;
+            height: 190px;
+            background-image: url(../images/bread2.png);
+}
+
 
 .footer-nav,
 .footer-address {
@@ -517,4 +572,46 @@ padding: 32px 0;
 .address-icon:hover {
     fill: var(--color-brand-normal);
 
+}
+
+/* Modal Window */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    transition: opacity .3s, visibility .3s;
+
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+
+}
+
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
