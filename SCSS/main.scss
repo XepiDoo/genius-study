@@ -3,189 +3,26 @@
 @import './utils/variables';
 @import './base';
 @import './utils/utils';
+@import './utils/texts';
 
-@import './components/header';
+@import './layouts/header';
 @import './components/buttons';
 @import './components/links';
-@import './components/hero';
-@import './components/sections';
-@import './components/traditions';
-@import './components/advantages';
-@import './components/chefs';
-@import './components/formats';
-@import './components/contacts';
-@import './components/footer';
+@import './layouts/hero';
 
+@import './components/sections';
+@import './layouts/traditions-section';
+@import './layouts/advantages-section';
+@import './layouts/chefs-section';
+@import './layouts/formats-section';
+@import './components/formats-card';
+@import './layouts/contacts-section';
+@import './layouts/footer';
+@import './layouts/modal';
+@import './components/form';
 
 @import './utils/mixins';
 
-.container {
-    width: 100%;
-    max-width: 1288px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
+@import './layouts/container';
 
 
-/* Modal Window */
-
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
-    transition: opacity .3s, visibility .3s;
-
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-}
-
-.modal {
-    position: relative;
-    width: 100%;
-    max-width: 880px;
-    height: 100%;
-    max-height: 880px;
-    padding: 128px;
-    background-color: var(--color-primary-light);
-    border-radius: 32px;
-    overflow-y: auto;
-
-}
-
-
-.modal-btn-close {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    cursor: pointer;
-    border: 0;
-    background-color: transparent;
-}
-
-
-/* Form */
-
-.form-field {
-    margin-bottom: 32px;
-}
-
-.form-label {
-    position: absolute;
-    top: 16px;
-    left: 42px;
-}
-
-.form-input {
-    padding: 16px 42px;
-    width: 100%;
-    border: 1px solid var(--color-secondary-dark);
-    border-radius: 8px;
-    background-color: transparent;
-    font-size: 16px;
-    line-height: 1.17;
-}
-
-.form-input:focus {
-    border: 1px solid var(--color-brand-normal);
-    outline: none;
-}
-
-/* 
-.form-input:required {
-    border-color: red;
-} */
-
-/* .form-input:placeholder-shown {
- background-color:rgb(193, 193, 240) ;
-} */
-
-.form-input:disabled {
-    border-color: lightgrey;
-    cursor: not-allowed
-}
-
-.form-input:disabled::placeholder {
-    color: lightgrey
-}
-
-.form-input::placeholder {
-    color: var(--color-secondary-dark);
-    font-size: 16px;
-    line-height: 1.17;
-
-}
-
-.form-input:focus::placeholder {
-    color: var(--color-primary-dark);
-}
-
-.form-button {
-    display: block;
-    margin: 0 auto 24px;
-
-}
-
-.form-terms {
-    margin: 0 auto;
-    max-width: 220px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.form-terms-link {
-    color: var(--color-primary-dark);
-    text-underline-offset: 2px;
-}
-
-.modal-header {
-    margin-bottom: 48px;
-    text-align: center;
-}
-
-.modal-text {
-    color: var(--color-brand-dark);
-}
-
-/* .checkbox {
-    position: relative;
-}
-
-.checkbox-input {
-    appearance: none;
-}
-
-.checkbox-input:checked + .checkbox-label::before
-{
- background-color: green;
-}
-
-.checkbox-label {
-   padding-left: 24px; 
-}
-
-.checkbox-label::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px; 
-    height: 16px;
-    margin-top: 5px;
-    border: 1px solid #31261a;
-    border-radius: 2px;
-    content: '';
-   
-} */
