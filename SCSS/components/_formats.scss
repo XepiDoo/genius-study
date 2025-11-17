@@ -1,0 +1,92 @@
+.format-title {
+    margin-bottom: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary-light);
+}
+
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+}
+
+.formats-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.format-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+}
+
+.format-card {
+    position: relative;
+    display: flex;
+    height: 444px;
+    padding: 24px;
+    background-image: linear-gradient(180deg,
+            rgba(49, 38, 26, 0) 55.21%,
+            rgba(49, 38, 26, 0.71) 72.92%,
+            #31261a 100%);
+    border-radius: 16px;
+    transition: transform 0.3s;
+
+}
+
+.format-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // z-index: 0;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
+}
+
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+
+/* Carousel */
+
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--color-primary-dark);
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: var(--color-primary-dark);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* .carousel-arrow {
+    fill: var(--color-primary-dark);
+} */
+
+.carousel-button:hover {
+
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
+
+.carousel-button.next {
+    transform: rotate(180deg);
+
+}
