@@ -1,26 +1,28 @@
-.format-title {
+.format-section {
+
+&__container {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+}
+
+&__title {
     margin-bottom: 80px;
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--color-primary-light);
 }
 
-.formats-container {
-    display: flex;
-    gap: 32px;
-    align-items: center;
+&__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+&__item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+
 
 }
 
-.formats-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: stretch;
-}
 
-.format-text {
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--color-primary-light);
-}

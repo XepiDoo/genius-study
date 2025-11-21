@@ -19,10 +19,9 @@
     &--limited {
         max-width: 330px;
 }
-
 }
 
-.traditions-image {
+&__image {
     width: 393;
     height: 466;
     top: 894px;
@@ -31,3 +30,6 @@
     border-top-left-radius: 400px;
     border-top-right-radius: 400px;
 }
+
+}
+
