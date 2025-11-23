@@ -1,45 +1,4 @@
-
-
-@import './utils/fonts';
-@import './utils/variables';
-@import './base';
-@import './utils/utils';
-@import './utils/texts';
-@import './utils/mixins';
-
-@import './layouts/sections';
-@import './layouts/container';
-
-
-
-@import './layouts/header';
-@import './components/buttons';
-@import './components/links';
-@import './components/input';
-
-
-@import './layouts/hero';
-@import './layouts/advantages-section';
-@import './layouts/traditions-section';
-
-@import './layouts/chefs-section';
-@import './components/chefs-card';
-
-
-@import './layouts/formats-section';
-@import './components/format-card';
-@import './components/carousel-button';
-
-@import './layouts/contacts-section';
-
-@import './components/form-terms';
-
-
-@import './layouts/footer';
-@import './layouts/modal';
-
-
-@import './utils/mixins';
-@import './layouts/container';
-
-
+@use './utils' as *;
+@use './layouts';
+@use './components';
+@use './base';
